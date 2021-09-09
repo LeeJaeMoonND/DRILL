@@ -57,5 +57,5 @@ t.forward(20)
 t.left(90)
 t.forward(100)
 
-t.extionclick()#클릭 전까지 안꺼짐
+t.exitonclick()#클릭 전까지 안꺼짐
 

@@ -22,4 +22,4 @@ while(countX>=0):
     t.forward(500)
     countX=countX-1
 
-t.extionclick() #클릭 전까지 안꺼짐
+t.exitonclick() #클릭 전까지 안꺼짐
