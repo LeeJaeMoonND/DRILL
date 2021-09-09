@@ -11,7 +11,6 @@ while(countY>=0):
     t.pendown()
     t.forward(500)
     countY=countY-1
-
 t.right(90) 
 
 #세로 축 그리기
