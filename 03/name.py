@@ -17,6 +17,7 @@ t.forward(120)
 t.back(50)
 t.left(90)
 t.forward(50)
+
 #재 그리기
 t.penup()
 t.goto(240,100)
@@ -31,6 +32,7 @@ t.forward(50)
 t.right(180)
 t.forward(100)
 t.penup()
+
 #문 그리기
 t.goto(280,100)
 t.pendown()
