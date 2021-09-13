@@ -1,3 +1,5 @@
+#2017152030 이재문
+
 import turtle
 
 #터틀의 왼쪽 움직임
@@ -29,7 +31,12 @@ def turtle_Down():
 def reset_turtle():
     turtle.reset()
 
+turtle.shape('turtle')
 
-
+turtle.onkey(turtle_Left,'d')
+turtle.onkey(turtle_Right,'a')
+turtle.onkey(turtle_Up,'w')
+turtle.onkey(turtle_Down,'s')
+turtle.onkey(reset_turtle,'Escape')
 turtle.listen()
 
