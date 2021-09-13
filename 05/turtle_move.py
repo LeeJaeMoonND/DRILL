@@ -6,3 +6,7 @@ def turtle_move(radius):
     turtle.forward(50)
     turtle.stamp()
 
+#리셋 함수
+def reset_turtle():
+    turtle.reset()
+
