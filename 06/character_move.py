@@ -10,6 +10,7 @@ character = load_image('character.png')
 
 x = 400
 y = 90
+angle= -90
 
 def move_character(x,y):
     clear_canvas_now()
@@ -17,6 +18,7 @@ def move_character(x,y):
     character.draw_now(x,y)
 
 while(True):
+    # 사각형 운동
     while x<750:
         move_character(x,y)
         x+=2
@@ -37,10 +39,16 @@ while(True):
         move_character(x,y)
         x+=2
         delay(0.01)
-        
-    
-    
-    
+
+    #원운동
+    while(angle<=270):
+        move_character(x,y)
+        angle += 2
+        x= 400+(210 * math.cos(angle/360 * 2 * math.pi))
+        y= 300+(210 * math.sin(angle/360 * 2 * math.pi))
+        delay(0.01)
+
+    angle -=360
 
 
 close_canvas()
